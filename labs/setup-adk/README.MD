@@ -29,9 +29,14 @@ sudo update-alternatives --config javac
 
 ## Étape 2 : Creation projet
 
-```bash
-mkdir -p my_first_agent/src/main/java/com/example/agent && \
-    touch my_first_agent/src/main/java/com/example/agent/HelloTimeAgent.java && \
-    touch my_first_agent/src/main/java/com/example/agent/AgentCliRunner.java && \
-    touch my_first_agent/pom.xml my_first_agent/.env
+## Étape 3 : Config pom.xml
+
+```text
+<dependencies>
+    <dependency>
+        <groupId>com.google.adk</groupId>
+        <artifactId>google-adk</artifactId>
+        <version>1.2.0</version>
+    </dependency>
+</dependencies>
 ```
