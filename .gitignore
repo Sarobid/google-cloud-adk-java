@@ -4,3 +4,4 @@ target/
 *.iml
 .env
 auth-key.json
+.vscode/
