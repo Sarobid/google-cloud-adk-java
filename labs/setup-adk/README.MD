@@ -19,10 +19,13 @@ sudo apt install openjdk-17-jdk
 ```bash
 sudo update-alternatives --config java
 ```
+
 *Saisissez le numéro correspondant et appuyez sur Entrée*
+
 ```bash
 sudo update-alternatives --config javac
 ```
+
 *Saisissez le numéro correspondant et appuyez sur Entrée*
 
 - Revéfication du version java
