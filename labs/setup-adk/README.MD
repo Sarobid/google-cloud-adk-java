@@ -30,24 +30,10 @@ sudo update-alternatives --config javac
 
 - Revéfication du version java
 
-## Étape 2 : Creation projet
-
-## Étape 3 : Config pom.xml
-
-```text
-<dependencies>
-    <dependency>
-        <groupId>com.google.adk</groupId>
-        <artifactId>google-adk</artifactId>
-        <version>1.2.0</version>
-    </dependency>
-</dependencies>
-```
-
 # Etape 4 : preparation api key
 
 ```bash
-echo 'export GOOGLE_API_KEY="YOUR_API_KEY"' > .env
+export GOOGLE_API_KEY="YOUR_API_KEY"'
 ```
 
 # Etape 5 : lancer le projet
