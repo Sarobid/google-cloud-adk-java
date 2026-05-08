@@ -18,6 +18,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'com.google.adk:google-adk:0.1.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     compileOnly 'org.projectlombok:lombok'
