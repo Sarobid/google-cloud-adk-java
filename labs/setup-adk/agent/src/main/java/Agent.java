@@ -6,7 +6,7 @@ import com.google.adk.tools.FunctionTool;
 
 import java.util.Map;
 
-public class HelloTimeAgent {
+public class Agent {
 
     public static BaseAgent initAgent() {
         return LlmAgent.builder()
@@ -16,7 +16,7 @@ public class HelloTimeAgent {
                 Tu es un assistant serviable
                 """)
             .model("gemini-2.5-flash")
-            .tools(FunctionTool.create(HelloTimeAgent.class, "getCurrentTime"))
+            .tools(FunctionTool.create(Agent.class, "getCurrentTime"))
             .build();
     }
 

@@ -13,7 +13,7 @@ import java.util.Scanner;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Main {
-    public static BaseAgent ROOT_AGENT = HelloTimeAgent.initAgent();
+    public static BaseAgent ROOT_AGENT = Agent.initAgent();
     public static void main(String[] args) {
 
         RunConfig runConfig = RunConfig.builder().build();
