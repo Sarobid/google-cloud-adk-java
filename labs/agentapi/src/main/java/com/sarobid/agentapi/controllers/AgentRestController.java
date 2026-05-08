@@ -1,4 +1,4 @@
-package com.sarobid.agentapi.restcontrollers;
+package com.sarobid.agentapi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sarobid.agentapi.dto.AgentRequestDTO;
 import com.sarobid.agentapi.dto.AgentResponseDTO;
-import com.sarobid.agentapi.services.IAgentService;
+import com.sarobid.agentapi.services.AgentService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("api/agent")
 public class AgentRestController {
-    private IAgentService agentService;
+    private AgentService agentService;
 
     @Autowired
-    public AgentRestController(IAgentService agentService) {
+    public AgentRestController(AgentService agentService) {
         this.agentService = agentService;
     }
 
