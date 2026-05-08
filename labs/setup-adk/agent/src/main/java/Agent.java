@@ -10,23 +10,14 @@ public class Agent {
 
     public static BaseAgent initAgent() {
         return LlmAgent.builder()
-            .name("agent serviable")
-            .description("Un agent assistant serviable.")
+            .name("math_tutor_agent")
+            .description("Aide les élèves à apprendre l'algèbre en les guidant à travers les\n" + //
+                                "étapes de résolution de problèmes.")
             .instruction("""
-                Tu es un assistant serviable
+                    Tu es un professeur de mathématiques patient. Aide les élèves sur
+                leurs problèmes d'algèbre.
                 """)
             .model("gemini-2.5-flash")
-            .tools(FunctionTool.create(Agent.class, "getCurrentTime"))
             .build();
-    }
-
-    /** Mock tool implementation */
-    @Schema(description = "Get the current time for a given city")
-    public static Map<String, String> getCurrentTime(
-        @Schema(name = "city", description = "Name of the city to get the time for") String city) {
-        return Map.of(
-            "city", city,
-            "forecast", "The time is 10:30am."
-        );
     }
 }
