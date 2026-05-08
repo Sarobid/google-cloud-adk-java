@@ -1,0 +1,7 @@
+target/
+.idea/
+*.class
+*.iml
+.env
+auth-key.json
+.vscode/
