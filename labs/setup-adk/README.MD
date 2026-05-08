@@ -53,5 +53,5 @@ echo 'export GOOGLE_API_KEY="YOUR_API_KEY"' > .env
 # Etape 5 : lancer le projet
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.sarobid.Main"
+mvn exec:java -Dexec.mainClass="Main"
 ```
