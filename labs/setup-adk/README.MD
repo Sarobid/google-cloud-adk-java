@@ -43,3 +43,15 @@ sudo update-alternatives --config javac
     </dependency>
 </dependencies>
 ```
+
+# Etape 4 : preparation api key
+
+```bash
+echo 'export GOOGLE_API_KEY="YOUR_API_KEY"' > .env
+```
+
+# Etape 5 : lancer le projet
+
+```bash
+mvn exec:java -Dexec.mainClass="com.sarobid.Main"
+```

@@ -1,16 +1,14 @@
-package com.sarobid;
+
 import com.google.adk.agents.BaseAgent;
 import com.google.adk.agents.LlmAgent;
 import com.google.adk.tools.Annotations.Schema;
 import com.google.adk.tools.FunctionTool;
 
-
 import java.util.Map;
 
 public class HelloTimeAgent {
-    public static BaseAgent ROOT_AGENT = initAgent();
 
-    private static BaseAgent initAgent() {
+    public static BaseAgent initAgent() {
         return LlmAgent.builder()
             .name("agent serviable")
             .description("Un agent assistant serviable.")

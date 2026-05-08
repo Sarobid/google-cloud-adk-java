@@ -1,19 +1,23 @@
-package com.sarobid;
+
+import com.google.adk.agents.BaseAgent;
 import com.google.adk.agents.RunConfig;
 import com.google.adk.events.Event;
 import com.google.adk.runner.InMemoryRunner;
 import com.google.adk.sessions.Session;
 import com.google.genai.types.Content;
 import com.google.genai.types.Part;
+
 import io.reactivex.rxjava3.core.Flowable;
 import java.util.Scanner;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Main {
+    public static BaseAgent ROOT_AGENT = HelloTimeAgent.initAgent();
     public static void main(String[] args) {
+
         RunConfig runConfig = RunConfig.builder().build();
-        InMemoryRunner runner = new InMemoryRunner(HelloTimeAgent.ROOT_AGENT);
+        InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 
         Session session = runner
                 .sessionService()
