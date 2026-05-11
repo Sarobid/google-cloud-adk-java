@@ -13,7 +13,7 @@ public class MathTutorAgent {
                     Tu es un professeur de mathématiques patient. Aide les élèves sur
                 leurs problèmes d'algèbre.
                 """)
-            .model("gemini-2.0-flash-lite")
+            .model("gemini-2.5-flash")
             .build();
     }
 }
