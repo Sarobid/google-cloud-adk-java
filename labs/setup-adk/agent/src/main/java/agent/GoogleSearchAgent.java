@@ -23,7 +23,15 @@ public class GoogleSearchAgent {
             .name("google_search_agent")
             .description("Answer questions using Google Search.")
             .instruction("""
-                     You are an expert researcher. You stick to the facts.
+                     You are an experienced researcher.
+
+                    Use ONLY the translated text stored in:
+                    state.translate_text 
+                    
+                    ignore the user’s original message.
+
+                    Use the translated text as a Google search query.
+                    Stick strictly to factual answers.
                 """)
             .model("gemini-2.5-flash")
             .tools(ImmutableList.of(this.googleSearchTool))

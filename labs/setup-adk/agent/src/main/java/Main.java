@@ -17,8 +17,8 @@ public class Main {
 
     public static void main(String[] args) {
         // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
-        GeoValidator geoValidator = new GeoValidator();
-        BaseAgent ROOT_AGENT = geoValidator.getAgent();
+        // GeoValidator geoValidator = new GeoValidator();
+        BaseAgent ROOT_AGENT = AgentSequentiel.initAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 
