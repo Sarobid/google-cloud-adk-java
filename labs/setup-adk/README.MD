@@ -41,3 +41,15 @@ export GOOGLE_API_KEY="YOUR_API_KEY"'
 ```bash
 mvn exec:java -Dexec.mainClass="Main"
 ```
+
+# DOCS : 
+
+* interdit retour vers agent parent
+```bash
+disallow_transfer_to_parent=True
+```
+
+* interdit transfert vers agents frères
+```bash
+interdit transfert vers agents frères
+```

@@ -16,8 +16,9 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class Main {
 
     public static void main(String[] args) {
-        GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
-        BaseAgent ROOT_AGENT = googleSearchAgent.getAgent();
+        // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
+        GeoValidator geoValidator = new GeoValidator();
+        BaseAgent ROOT_AGENT = geoValidator.getAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 
