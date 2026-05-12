@@ -18,8 +18,8 @@ public class Main {
     public static void main(String[] args) {
         // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
         // GeoValidator geoValidator = new GeoValidator();
-        CustomSupportAgent customSupportAgent = new CustomSupportAgent();
-        BaseAgent ROOT_AGENT = customSupportAgent.getAgent();
+        // CustomSupportAgent customSupportAgent = new CustomSupportAgent();
+        BaseAgent ROOT_AGENT = MathTutorAgent.initAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 

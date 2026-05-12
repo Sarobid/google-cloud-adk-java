@@ -27,6 +27,8 @@ public class MathTutorAgent {
             .model("gemini-2.5-flash")
             .generateContentConfig(GenerateContentConfig.builder()
                 .temperature(0.4F)
+                .maxOutputTokens(500)
+                .topP(0.8F)
                 .build())
             .build();
     }
