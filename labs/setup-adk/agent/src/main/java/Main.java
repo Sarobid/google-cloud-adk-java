@@ -9,13 +9,17 @@ import com.google.genai.types.Part;
 
 import io.reactivex.rxjava3.core.Flowable;
 import java.util.Scanner;
+import agent.*;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Main {
-    public static BaseAgent ROOT_AGENT = Agent.initAgent();
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
+        // GeoValidator geoValidator = new GeoValidator();
+        // CustomSupportAgent customSupportAgent = new CustomSupportAgent();
+        BaseAgent ROOT_AGENT = MathTutorAgent.initAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 

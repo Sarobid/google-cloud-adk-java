@@ -1,13 +1,9 @@
+package com.sarobid.agentapi.agent.mathtutor;
 
 import com.google.adk.agents.BaseAgent;
 import com.google.adk.agents.LlmAgent;
-import com.google.adk.tools.Annotations.Schema;
-import com.google.adk.tools.FunctionTool;
 
-import java.util.Map;
-
-public class Agent {
-
+public class MathTutorAgent {
     public static BaseAgent initAgent() {
         return LlmAgent.builder()
             .name("math_tutor_agent")
