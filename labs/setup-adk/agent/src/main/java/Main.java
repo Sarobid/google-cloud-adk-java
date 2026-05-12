@@ -19,7 +19,8 @@ public class Main {
         // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
         // GeoValidator geoValidator = new GeoValidator();
         // CustomSupportAgent customSupportAgent = new CustomSupportAgent();
-        BaseAgent ROOT_AGENT = MathTutorAgent.initAgent();
+        GeographyAgentUseFonctionTools geographyAgentUseFonctionTools = new GeographyAgentUseFonctionTools();
+        BaseAgent ROOT_AGENT = geographyAgentUseFonctionTools.getAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 
