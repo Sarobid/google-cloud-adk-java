@@ -53,3 +53,14 @@ disallow_transfer_to_parent=True
 ```bash
 interdit transfert vers agents frères
 ```
+
+## Temperature
+
+* Température basse (0,0-0,3) - déterministe:
+  * Tres coherent et  previsible 
+
+* Température moyenne (0,4-0,7) - équilibré:
+  * Équilibre entre créativité et cohérence
+
+* Température élevée (0,8-1,0) - créativité :
+  * Reponse varié et creative

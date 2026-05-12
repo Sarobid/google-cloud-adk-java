@@ -2,6 +2,7 @@ package agent;
 
 import com.google.adk.agents.BaseAgent;
 import com.google.adk.agents.LlmAgent;
+import com.google.genai.types.GenerateContentConfig;
 
 public class MathTutorAgent {
     public static BaseAgent initAgent() {
@@ -24,6 +25,9 @@ public class MathTutorAgent {
                         question est une opportunité de progresser
                 """)
             .model("gemini-2.5-flash")
+            .generateContentConfig(GenerateContentConfig.builder()
+                .temperature(0.4F)
+                .build())
             .build();
     }
 }
