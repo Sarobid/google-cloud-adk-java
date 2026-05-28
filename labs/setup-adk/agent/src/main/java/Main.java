@@ -19,8 +19,9 @@ public class Main {
         // GoogleSearchAgent googleSearchAgent = new GoogleSearchAgent();
         // GeoValidator geoValidator = new GeoValidator();
         // CustomSupportAgent customSupportAgent = new CustomSupportAgent();
-        GeographyAgentUseFonctionTools geographyAgentUseFonctionTools = new GeographyAgentUseFonctionTools();
-        BaseAgent ROOT_AGENT = geographyAgentUseFonctionTools.getAgent();
+        // GeographyAgentUseFonctionTools geographyAgentUseFonctionTools = new GeographyAgentUseFonctionTools();
+        FileReaderAssistant fileReaderAssistant = new FileReaderAssistant();
+        BaseAgent ROOT_AGENT = fileReaderAssistant.getAgent();
         RunConfig runConfig = RunConfig.builder().build();
         InMemoryRunner runner = new InMemoryRunner(ROOT_AGENT);
 
