@@ -5,3 +5,4 @@ target/
 .env
 auth-key.json
 .vscode/
+my_files/
