@@ -1,20 +1,41 @@
-# Google Cloud Skills Boost : AI Agent Development (Java Edition)
+# Google Cloud ADK — Java
 
-![Java](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java)
-![GCP](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge\&logo=java)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-ADK-4285F4?style=for-the-badge\&logo=google-cloud)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)
 
-## 🎯 À propos du Repository
-Ce dépôt centralise toutes mes implémentations pratiques issues du parcours d'apprentissage Google Cloud sur le développement d'agents. 
+## About
 
-La particularité de ce projet est le **portage intégral en Java** des exercices du cours *"Créer agent avec Agent Development Kit (ADK)"*, initialement proposés en Python. Ce choix technique démontre une capacité à adapter les concepts de pointe de l'IA Générative dans un environnement de développement d'entreprise robuste.
+Practical implementations of **Google Cloud Agent Development Kit (ADK)** concepts in Java.
 
-## 🧠 Objectifs d'Apprentissage
-L'implémentation suit les étapes clés du cursus Google Skills :
-*   **Configuration ADK :** Initialisation de l'environnement de développement via la JVM.
+This repository contains Java implementations of exercises originally provided in Python, covering different agent patterns, tools, sessions, state management and multi-agent orchestration.
 
-## 🛠️ Stack Technique
-*   **Langage :** Java 17+
-*   **Build Tool :** Maven / Gradle
-*   **SDK :** Google Cloud Java Client Libraries
-*   **Architecture :** ADK (Agent Development Kit) & Vertex AI
+## Agents & Concepts
+
+* Travel planning agent
+* Google Search agent
+* Translation agent
+* Math tutor agent
+* File reader agent
+* Custom support agent
+* Sequential multi-agent orchestration
+* Custom function tools
+* Session and state management
+* Asynchronous agent execution
+
+## Tech Stack
+
+* **Java 17+**
+* **Google ADK**
+* **Gemini 2.5 Flash**
+* **Spring Boot**
+* **RxJava 3**
+* **Maven / Gradle**
+
+## Purpose
+
+This project explores the implementation of **Generative AI agent patterns and orchestration in Java**, with a focus on Google's Agent Development Kit.
+
+## License
+
+Apache License 2.0
